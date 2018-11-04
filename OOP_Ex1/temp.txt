@@ -1,0 +1,2 @@
+Hello there, here is some text.
+We are writing the text to the file.
