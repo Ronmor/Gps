@@ -1,6 +1,15 @@
 package GUI;
 //Comment out the following package statement to compile separately.
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Window;
+import java.awt.event.WindowAdapter;
+
+import javax.swing.JFrame;
+
+
 /**
 * Example01 illustrates some basics of Java 2D.
 * This version is compliant with Java 1.2 Beta 3, Jun 1998.
@@ -12,10 +21,7 @@ package GUI;
 * @see java.awt.Graphics2D
 **/
 
-import java.awt.*;
-import java.awt.event.*;
-
-public class Example01 extends Frame {
+public class Example01 extends JFrame {
 /**
  * Instantiates an Example01 object.
  **/
@@ -44,7 +50,7 @@ public Example01() {
   //this frame is using when the window is closed.  We use 
   //an anonymous inner class adapter for this.
   addWindowListener(new WindowAdapter() 
-    {public void windowClosing(WindowEvent e) 
+    {public void windowClosing(Window e) 
        {dispose(); System.exit(0);}  
     }
   );
@@ -65,12 +71,13 @@ public void paint(Graphics g) {
   g2d.setColor(Color.blue);
   g2d.drawRect(75,75,300,200);
   
-  g.setColor(Color.GREEN);
-  g.drawOval(100, 200, 10, 20);
-  g.fillOval(500, 200, 50, 50);
+ 
   g.setColor(Color.MAGENTA);
   int h = this.getHeight(), w = this.getWidth();
   g.drawString("("+w+","+h+")", 30, 100);
+  g.setColor(Color.GREEN);
+  g.drawOval(100, 200, 10, 20);
+  g.fillOval(w/2, h/2, 50, 50);
   
 }
 }
