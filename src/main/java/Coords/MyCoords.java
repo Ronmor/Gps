@@ -1,14 +1,20 @@
 package Coords;
 
+import Geom.Geom_element;
 import Geom.Point3D;
+import edu.nps.moves.disutil.CoordinateTransformer;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
+
+import static java.lang.Math.PI;
 
 public class MyCoords implements coords_converter{
-        private LinkedList<Point3D> coords;
+        private long earthRadius = 6371*1000;
+        private double PI = Math.PI;
 
-
-
+        public MyCoords(){}
         /**
      * computes a new point which is the gps point transformed by a 3D vector (in meters)
      *
@@ -17,7 +23,30 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D add(Point3D gps, Point3D local_vector_in_meter) {
-        return null;
+        Point3D pointsAt = toRadian(diff(local_vector_in_meter,gps));
+        pointsAt.set_x(earthRadius*Math.sin(pointsAt.get_x()));
+        pointsAt.set_y(earthRadius*Math.sin(pointsAt.get_y())*Math.cos(gps.get_x()*PI)/180);
+        return pointsAt;
+    }
+    private Point3D diff(Point3D gps, Point3D local_vector_in_meter){
+        double xDiff = gps.get_x()-local_vector_in_meter.get_x();
+        double yDiff = gps.get_y()-local_vector_in_meter.get_y();
+        double zDiff = gps.get_z()-local_vector_in_meter.get_z();
+        Point3D diff = new Point3D(xDiff,yDiff,zDiff);
+        return diff;
+    }
+    private Point3D toRadian(Point3D CalculatedDiff){
+        double r = (CalculatedDiff.get_x()*PI) / 180;
+        double tetha = (CalculatedDiff.get_y()*PI) / 180;
+        double alt = CalculatedDiff.get_z();
+        Point3D rad = new Point3D(r , tetha,alt);
+        return rad;
+    }
+    public Point3D toMeter(Point3D gps,Point3D local_vector_in_meter){
+        Point3D pointsAt = toRadian(diff(gps,local_vector_in_meter));
+        pointsAt.set_x(earthRadius*Math.sin(pointsAt.get_x()));
+        pointsAt.set_y(earthRadius*Math.sin(pointsAt.get_y())*Math.cos(gps.get_x()*PI/180));
+        return pointsAt;
     }
 
     /**
@@ -28,7 +57,8 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public double distance3d(Point3D gps0, Point3D gps1) {
-        return 0;
+        Point3D distanceMeasure =  toMeter(gps0 , gps1);
+        return Math.sqrt(distanceMeasure.get_y()*distanceMeasure.get_y()+distanceMeasure.get_x()*distanceMeasure.get_x());
     }
 
     /**
@@ -62,6 +92,14 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public boolean isValid_GPS_Point(Point3D p) {
-        return false;
+        boolean isValid = false;
+        double lat = p.get_x();
+        double lon = p.get_y();
+        double alt = p.get_z();
+        if (-180<= lat && lat <= 180 && -90<=lon && lon <=90 && -450 <= alt){
+            isValid = true;
+        }
+        return isValid;
     }
+
 }
