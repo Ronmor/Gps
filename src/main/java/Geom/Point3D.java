@@ -1,5 +1,4 @@
 package Geom;
-
 import java.io.Serializable;
 public class Point3D implements Geom_element, Serializable 
 {
@@ -33,21 +32,20 @@ public class Point3D implements Geom_element, Serializable
 	///////////////////////////////////////////////////////////////////////////
 	////////////////////////////       methods        /////////////////////////
 	///////////////////////////////////////////////////////////////////////////
-
-	
 	public double x() {return _x;}
 	public double y() {return _y;}
 	public double z() {return _z;}
-	public int ix() {return (int)_x;}
+    public void set_x(double _x) { this._x = _x; }
+    public void set_y(double _y) { this._y = _y; }
+    public void set_z(double _z) { this._z = _z; }
+    public int ix() {return (int)_x;}
 	public int iy() {return (int)_y;}
 	public int iz() {return (int)_z;}
-		
 	public void add(Point3D p) { add(p._x,p._y,p._z);}
 	public void add(double dx, double dy, double dz) {
 			_x+=dx;_y+=dy;_z+=dz;
 		}
 	public void add(double x, double y){this.add(x,y,0);}
-
 	public String toString() 
 	{
 		return ""+_x+","+_y+","+_z;
@@ -65,7 +63,6 @@ public class Point3D implements Geom_element, Serializable
 		double t = dx*dx+dy*dy+dz*dz;
 		return Math.sqrt(t);
 	}
-
 	public boolean equals(Point3D p2)
 	{
 		return ( (_x==p2._x) && (_y==p2._y) && (_z==p2._z) );
@@ -76,11 +73,8 @@ public class Point3D implements Geom_element, Serializable
 	}
 	  public boolean equalsXY (Point3D p)
 	    {return p._x == _x && p._y == _y;}
-	    
     public String toFile()  {return _x+","+_y+","+_z;}
-    
     public String toFile1()  {return "Point3D "+_x+" "+_y+" "+_z;}
-
     ////////////////////////////////////////////////////////////////////////////////////////
 
 public final static int ONSEGMENT = 0,  LEFT = 1, RIGHT = 2, INFRONTOFA = 3, BEHINDB = 4, ERROR = 5;
@@ -102,9 +96,6 @@ public final static int DOWN = 6, UP = 7;
         }
         return flag;
     }
-
-
- 
     /** pointLineTest <br>
 	test the following location of a point regards a line segment - all in 2D projection.<br><br>
    
@@ -121,11 +112,8 @@ public final static int DOWN = 6, UP = 7;
         BEHINDB:  �����a---------b����+�                              <br>
 	ERROR: a==b || a==null || b == null;                               <br>
     */
-
     public int pointLineTest(Point3D a, Point3D b) {
-
 	if(a== null || b==null || a.equalsXY(b)) return ERROR;
-
 	double dx = b._x-a._x;
 	double dy = b._y-a._y;
 	double res = dy*(_x-a._x)-dx*(_y-a._y);
@@ -155,8 +143,6 @@ public final static int DOWN = 6, UP = 7;
 	}
 	return ERROR;
     }
-	
-	
 	////////////////////////////////////////////////////////////////
 	public void rescale(Point3D center, Point3D vec) {
 		if(center!=null && vec != null)
@@ -235,62 +221,13 @@ public final static int DOWN = 6, UP = 7;
 	public static double r2d(double a) { return Math.toDegrees(a);}
 	/** transform from radians to angles */
 	public static double d2r(double a) { return Math.toRadians(a);}
-
 	////////////////////////////////////////////////////////////////////////////////
     //My code
-
     public void radius(){
         this._x = Math.sqrt(this.x()*this.x() + this.y()*this.y() + this.z()*this.z());
     }
-    private double toradius(){
-	    return Math.sqrt(this.x()*this.x() + this.y()*this.y() + this.z()*this.z());
+
+    public void tetha() {
+        this._y = Math.atan2(this.y(), this.x());
     }
-
-    public void tetha(){
-        this._y = Math.atan2(this.y(),this.x());
-    }
-    private double toTetha(){
-	    return Math.atan2(this.y(),this.x());
-    }
-
-    public void alpha(){
-        this._z= Math.acos(this.z()/this.toradius());
-    }
-    private double toAlpha(){
-	    return Math.acos(this.z()/this.toradius());
-    }
-
-	public double get_x() {
-		return _x;
-	}
-
-	public void set_x(double _x) {
-		this._x = _x;
-	}
-
-	public double get_y() {
-		return _y;
-	}
-
-	public void set_y(double _y) {
-		this._y = _y;
-	}
-
-	public double get_z() {
-		return _z;
-	}
-
-	public void set_z(double _z) {
-		this._z = _z;
-	}
-
-	/**
-     * convert from Spherical to Cartesian
-     */
-    public void convert(){
-	    _x = toradius()*Math.sin(toAlpha())*Math.cos(toTetha());
-	    _y = toradius()*Math.sin(toTetha())*Math.sin(toAlpha());
-	    _z = toradius()*Math.cos(toAlpha());
-    }
-
 }
