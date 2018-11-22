@@ -88,22 +88,21 @@ public final static int DOWN = 6, UP = 7;
 
 /** return up iff this point is above the SEGMENT (not the line) */
     public int pointLineTest2(Point3D a, Point3D b) {
-    	int flag = this.pointLineTest(a,b);
-    	if(a._x < b._x ) {
-    		if(a._x<=_x && b._x>_x) {
-    			if (flag == LEFT) return DOWN;
-    			if (flag == RIGHT) return UP;
-    		}
-    	}
-    	else 
-    	if(a._x > b._x ) {
-    		if(b._x<=_x && a._x>_x) {
-    			if (flag == RIGHT) return DOWN;
-    			if (flag == LEFT) return UP;
-    		}
-    	}	
-    	return flag;
-	}
+        int flag = this.pointLineTest(a, b);
+        if (a._x < b._x) {
+            if (a._x <= _x && b._x > _x) {
+                if (flag == LEFT) return DOWN;
+                if (flag == RIGHT) return UP;
+            }
+        } else if (a._x > b._x) {
+            if (b._x <= _x && a._x > _x) {
+                if (flag == RIGHT) return DOWN;
+                if (flag == LEFT) return UP;
+            }
+        }
+        return flag;
+    }
+
 
  
     /** pointLineTest <br>
@@ -236,5 +235,62 @@ public final static int DOWN = 6, UP = 7;
 	public static double r2d(double a) { return Math.toDegrees(a);}
 	/** transform from radians to angles */
 	public static double d2r(double a) { return Math.toRadians(a);}
+
 	////////////////////////////////////////////////////////////////////////////////
+    //My code
+
+    public void radius(){
+        this._x = Math.sqrt(this.x()*this.x() + this.y()*this.y() + this.z()*this.z());
+    }
+    private double toradius(){
+	    return Math.sqrt(this.x()*this.x() + this.y()*this.y() + this.z()*this.z());
+    }
+
+    public void tetha(){
+        this._y = Math.atan2(this.y(),this.x());
+    }
+    private double toTetha(){
+	    return Math.atan2(this.y(),this.x());
+    }
+
+    public void alpha(){
+        this._z= Math.acos(this.z()/this.toradius());
+    }
+    private double toAlpha(){
+	    return Math.acos(this.z()/this.toradius());
+    }
+
+	public double get_x() {
+		return _x;
+	}
+
+	public void set_x(double _x) {
+		this._x = _x;
+	}
+
+	public double get_y() {
+		return _y;
+	}
+
+	public void set_y(double _y) {
+		this._y = _y;
+	}
+
+	public double get_z() {
+		return _z;
+	}
+
+	public void set_z(double _z) {
+		this._z = _z;
+	}
+
+	/**
+     * convert from Spherical to Cartesian
+     */
+    public void convert(){
+	    _x = toradius()*Math.sin(toAlpha())*Math.cos(toTetha());
+	    _y = toradius()*Math.sin(toTetha())*Math.sin(toAlpha());
+	    _z = toradius()*Math.cos(toAlpha());
+    }
+
 }
