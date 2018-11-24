@@ -230,4 +230,22 @@ public final static int DOWN = 6, UP = 7;
     public void tetha() {
         this._y = Math.atan2(this.y(), this.x());
     }
+
+
+	/**
+	 * normalize Vector.
+	 * @return ( V / ||V|| )
+	 */
+    public Point3D normalize() {
+		double size = this.distance3D(0, 0, 0);
+		double x = _x / size;
+		double y = _y / size;
+		double z = _z / size;
+		return new Point3D(x, y, z);
+	}
+	public static double productOfVectors(Point3D v , Point3D u){
+		return v.x()*u.x()+v.y()*u.y()*v.z()+u.z();
+	}
+
+
 }
