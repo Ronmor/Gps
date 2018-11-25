@@ -4,7 +4,6 @@ import Geom.Point3D;
 
 public class MyCoords implements coords_converter{
         private long earthRadius = 6371*1000;
-        private double PI = Math.PI;
 
         public MyCoords(){}
         /**
@@ -15,29 +14,37 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D add(Point3D gps, Point3D local_vector_in_meter) {
-        Point3D pointsAt = toRadian(diff(local_vector_in_meter,gps));
-        pointsAt.set_x(earthRadius*Math.sin(pointsAt.x()));
-        pointsAt.set_y(earthRadius*Math.sin(pointsAt.y())*Math.cos(gps.x()*PI)/180);
-        return pointsAt;
+        double radded_lat = ArcSin(local_vector_in_meter.x()/earthRadius);
+        double latDifference = r2d(radded_lat);
+        double destination_latValue = gps.x()+latDifference;
+        double lonNorm = Cos(d2r(gps.x()));
+        double raded_lon = ArcSin((local_vector_in_meter.y()/(earthRadius*lonNorm)));
+        double lonDifference = r2d(raded_lon);
+        double destination_lonValue = gps.y()+lonDifference;
+        double destination_altValue = local_vector_in_meter.z()+gps.z();
+        return new Point3D(destination_latValue,destination_lonValue,destination_altValue);
     }
 
     public Point3D diff(Point3D gps, Point3D local_vector_in_meter){
-        double xDiff = gps.x()-local_vector_in_meter.x();
-        double yDiff = gps.y()-local_vector_in_meter.y();
-        double zDiff = gps.z()-local_vector_in_meter.z();
+        double xDiff = -gps.x()+local_vector_in_meter.x();
+        double yDiff = -gps.y()+local_vector_in_meter.y();
+        double zDiff = -gps.z()+local_vector_in_meter.z();
         return new Point3D(xDiff,yDiff,zDiff);
     }
     private Point3D toRadian(Point3D CalculatedDiff){
-        double r = (CalculatedDiff.x()*PI) / 180;
-        double tetha = (CalculatedDiff.y()*PI) / 180;
-        double alt = CalculatedDiff.z();
-        return new Point3D(r , tetha,alt);
+        return new Point3D(d2r(CalculatedDiff.x()) , d2r(CalculatedDiff.y()),CalculatedDiff.z());
     }
     public Point3D toMeter(Point3D gps,Point3D local_vector_in_meter){
         Point3D pointsAt = toRadian(diff(gps,local_vector_in_meter));
-        pointsAt.set_x(earthRadius*Math.sin(pointsAt.x()));
-        pointsAt.set_y(earthRadius*Math.sin(pointsAt.y())*Math.cos(gps.x()*PI/180));
-        return pointsAt;
+        double lonNorm = Cos(d2r(gps.x()));
+        return new Point3D(earthRadius*Sin(pointsAt.x()),earthRadius*Sin(pointsAt.y())*lonNorm,pointsAt.z());
+    }
+
+    private Point3D Reverse_Meter_values_toRad(Point3D given_in_meters,Point3D start_point){
+        double radded_lat = ArcSin(given_in_meters.x()/earthRadius);
+        double lonNorm = Cos(d2r(start_point.x()));
+        double raded_lon = ArcSin((given_in_meters.y()/(earthRadius*lonNorm)));
+        return new Point3D(radded_lat,raded_lon,given_in_meters.z());
     }
 
     /**
@@ -60,7 +67,7 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D vector3D(Point3D gps0, Point3D gps1) {
-        return new Point3D(gps1.x()-gps0.x(),gps1.y()-gps0.y(),gps1.z()-gps0.z());
+        return toMeter(gps0,gps1);
     }
 
     /**
@@ -88,16 +95,6 @@ public class MyCoords implements coords_converter{
         polarRepOfVector[1] = elevation;
         polarRepOfVector[2] = distance;
         return polarRepOfVector;
-        /**
-        Point3D diff = this.diff(gps0, gps1);
-        double size = diff.distance3D(0, 0, 0);
-        double r = Math.sqrt(size);
-        double phi = Math.acos(diff.z() / r);
-        double theta = Math.acos(diff.x() / Math.sqrt(diff.x() * diff.x() + diff.y() * diff.y()));
-        double azimuth = gps0.north_angle(gps1);
-        double elevation = Math.asin(gps0.z()/gps0.distance3D(gps1));
-        double dist = distance3d(gps1,gps0);
-        return new double[]{azimuth, elevation, dist}; **/
     }
 
     /**
@@ -123,21 +120,21 @@ public class MyCoords implements coords_converter{
      * @param p1 is a coordinate
      * @return Delta(Y)
      */
-    public double dY(Point3D p , Point3D p1){ return p1.y()-p.y();}
+    private double dY(Point3D p, Point3D p1){ return p1.y()-p.y();}
     public double dX(Point3D p , Point3D p1){ return p1.x()-p.x();}
     public double dZ(Point3D p , Point3D p1){ return p1.z()-p.z();}
-    public double d2r(double x){
+    private double d2r(double x){
         return Point3D.d2r(x);
     }
-    public double r2d(double x){ return Point3D.r2d(x);}
-    public double Sin(double a){ return Math.sin(a); }
-    public double Cos(double a){ return Math.cos(a); }
-    public double ArcSin(double a){ return Math.asin(a); }
+    private double r2d(double x){ return Point3D.r2d(x);}
+    private double Sin(double a){ return Math.sin(a); }
+    private double Cos(double a){ return Math.cos(a); }
+    private double ArcSin(double a){ return Math.asin(a); }
     public double sizeOfVector(Point3D p){
         Point3D vectorZero = new Point3D(0,0,0);
         return p.distance3D(vectorZero);
     }
-    public double ArcCos(double a){ return Math.acos(a); }
+    private double ArcCos(double a){ return Math.acos(a); }
     public double angleBetween2Vectors(Point3D v , Point3D u){ return ArcCos(Point3D.productOfVectors(v,u) / sizeOfVector(v) * sizeOfVector(u));}
 
 }
