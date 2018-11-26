@@ -1,7 +1,7 @@
 package Coords;
 
 import Geom.Point3D;
-
+//TODO - validate coordinates conversions , initialize isValid contion for all methods!
 public class MyCoords implements coords_converter{
         private long earthRadius = 6371*1000;
 
@@ -14,18 +14,23 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D add(Point3D gps, Point3D local_vector_in_meter) {
-        double radded_lat = ArcSin(local_vector_in_meter.x()/earthRadius);
-        double latDifference = r2d(radded_lat);
-        double destination_latValue = gps.x()+latDifference;
-        double lonNorm = Cos(d2r(gps.x()));
-        double raded_lon = ArcSin((local_vector_in_meter.y()/(earthRadius*lonNorm)));
-        double lonDifference = r2d(raded_lon);
-        double destination_lonValue = gps.y()+lonDifference;
-        double destination_altValue = local_vector_in_meter.z()+gps.z();
-        return new Point3D(destination_latValue,destination_lonValue,destination_altValue);
-    }
+        boolean isValid = isValid_GPS_Point(gps);
+                if (!isValid) {
+               System.err.print("Invalid coordinates");
+                }
+                double radded_lat = ArcSin(local_vector_in_meter.x() / earthRadius);
+                double latDifference = r2d(radded_lat);
+                double destination_latValue = gps.x() + latDifference;
+                double lonNorm = Cos(d2r(gps.x()));
+                double raded_lon = ArcSin((local_vector_in_meter.y() / (earthRadius * lonNorm)));
+                double lonDifference = r2d(raded_lon);
+                double destination_lonValue = gps.y() + lonDifference;
+                double destination_altValue = local_vector_in_meter.z() + gps.z();
+                return new Point3D(destination_latValue, destination_lonValue, destination_altValue);
+            }
 
-    public Point3D diff(Point3D gps, Point3D local_vector_in_meter){
+
+    private Point3D diff(Point3D gps, Point3D local_vector_in_meter){
         double xDiff = -gps.x()+local_vector_in_meter.x();
         double yDiff = -gps.y()+local_vector_in_meter.y();
         double zDiff = -gps.z()+local_vector_in_meter.z();
@@ -67,7 +72,8 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D vector3D(Point3D gps0, Point3D gps1) {
-        return toMeter(gps0,gps1);
+        Point3D point3D = isValid_GPS_Point(toMeter(gps0, gps1)) ? toMeter(gps0, gps1) : null;
+        return point3D;
     }
 
     /**
@@ -87,11 +93,10 @@ public class MyCoords implements coords_converter{
         double lonNorm = Cos(d2r(gps1.x()));
         double alpha = dy*lonNorm;
         double beta = Sin(d2r(gps1.x()))*Cos(d2r(gps0.x()))-Cos(d2r(gps1.x()))*Sin(d2r(gps0.x()))*Cos(d2r(dY(gps0,gps1))); // This row == Sin(d2r(gps1.x-gps0.x))
-       // double beta = Sin(d2r(dX(gps1,gps0)));
         double azimuth = Math.atan2(alpha,beta);
         double distance = distance3d(gps0,gps1);
         polarRepOfVector[0] = azimuth < 0 ? (r2d(azimuth)+360) : r2d(azimuth); //This gives a close answer.
-        double elevation = gps0.up_angle(gps1);
+        double elevation = r2d(dZ(gps0,gps1)/distance - distance/(2*earthRadius));
         polarRepOfVector[1] = elevation;
         polarRepOfVector[2] = distance;
         return polarRepOfVector;
@@ -122,7 +127,7 @@ public class MyCoords implements coords_converter{
      */
     private double dY(Point3D p, Point3D p1){ return p1.y()-p.y();}
     public double dX(Point3D p , Point3D p1){ return p1.x()-p.x();}
-    public double dZ(Point3D p , Point3D p1){ return p1.z()-p.z();}
+    private double dZ(Point3D p, Point3D p1){ return p1.z()-p.z();}
     private double d2r(double x){
         return Point3D.d2r(x);
     }
@@ -130,7 +135,7 @@ public class MyCoords implements coords_converter{
     private double Sin(double a){ return Math.sin(a); }
     private double Cos(double a){ return Math.cos(a); }
     private double ArcSin(double a){ return Math.asin(a); }
-    public double sizeOfVector(Point3D p){
+    private double sizeOfVector(Point3D p){
         Point3D vectorZero = new Point3D(0,0,0);
         return p.distance3D(vectorZero);
     }
