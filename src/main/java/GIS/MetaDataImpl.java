@@ -4,13 +4,11 @@ import Coords.MyCoords;
 import Geom.Point3D;
 
 public class MetaDataImpl implements Meta_data {
-
     private long dataUTC;
-    private Point3D orientation;
-
-    public MetaDataImpl(long dataUTC, Point3D orientation) {
+    //private Point3D orientation;
+    public MetaDataImpl(long dataUTC) { //was : public MetaDataImpl(long dataUTC ,Point3D orientation)
         this.dataUTC = dataUTC;
-        this.orientation = orientation;
+        //this.orientation = orientation;
     }
     /**
      * returns the Universal Time Clock associated with this data;
@@ -20,13 +18,15 @@ public class MetaDataImpl implements Meta_data {
         return dataUTC;
     }
     /**
+     * AS REQUESTED FOR EX_2 , RETURN NULL .
      * @return the orientation: yaw, pitch and roll associated with this data;
      */
     @Override
     public Point3D get_Orientation() {
-        MyCoords coords = new MyCoords();
+       /** MyCoords coords = new MyCoords();
         double[] orientations = coords.azimuth_elevation_dist(orientation,new Point3D(0,0,0));
-        return new Point3D(orientations[0],orientations[1],orientations[2]);
+        return new Point3D(orientations[0],orientations[1],orientations[2]); */
+       return null;
     }
     public String toString(){
         return "UTC:"+getUTC()+"Oreientations"+get_Orientation().toString();

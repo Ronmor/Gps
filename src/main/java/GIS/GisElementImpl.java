@@ -23,8 +23,14 @@ public class GisElementImpl implements GIS_element {
         return data;
     }
 
+    /**
+     * tranlase method is to change given input's value
+     * it means to stand at this Gis_element , and to "move" the element by a vector
+     * TODO - ask if the algorithm is this.element(represented as V ) == V(x,y,z)+ Point3D(x,y,z)
+     * @param vec is the value of movement translation
+     */
     @Override
     public void translate(Point3D vec) {
-
+        ((Point3D) geom).add(vec);
     }
 }

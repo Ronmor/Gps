@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-
+//TODO - set UTC as the time that for Gis_element added to layer.
 public class GisProjectImpl implements GIS_project {
 
     private Set<GIS_layer> set = new HashSet<>();

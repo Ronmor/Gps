@@ -8,6 +8,7 @@ import org.junit.Test;
 public class MyCoordsTests {
     private Point3D building9;
     private Point3D humusLocation;
+    private Point3D local_vector_in_meter; // Set Coordinates as you want.
 
     MyCoords myCoords = new MyCoords();
     @Before
@@ -15,32 +16,36 @@ public class MyCoordsTests {
         // Coordinates copied from the examples in the attached Exel file.
         building9 = new Point3D(32.103315,35.209039 ,670);
         humusLocation = new Point3D(32.106352,35.205225,650);
+        local_vector_in_meter = myCoords.toMeter(building9,humusLocation);
     }
     @Test
-    public void diffTest() {
-        Point3D p1 = new Point3D(5, 4);
-        Point3D p0 = new Point3D(5, 3);
-        Point3D expected = new Point3D(0, 1);
-        Point3D actual = myCoords.diff(p1, p0);
-        Assert.assertTrue(expected.equals(actual));
+    public void addTest(){
+    Point3D actual = myCoords.add(building9,local_vector_in_meter);
+    Point3D expected = new Point3D(humusLocation);
+    Assert.assertTrue(expected.equals(actual));
     }
-
     @Test
-    public void azimuthTest() {
-        Point3D p1 = new Point3D(1, 2, 1.2);
-        Point3D p0 = new Point3D(1.8, 0.8, -6);
-        Point3D diff = myCoords.diff(p1, p0);
-        Point3D azimuth = diff.normalize();
-        Point3D expected = new Point3D(-0.109, 0.163, 0.98);
-        Assert.assertTrue(azimuth.close2equals(expected, 0.1));
+    public void testDistance3D(){
+        double distance_asAppears_example = 493.0523;
+        double actual = myCoords.distance3d(building9,humusLocation);
+        Assert.assertEquals(distance_asAppears_example , actual , 0.02);
     }
-
     @Test
     public void azimuthElevationDistanceTest() {
-        //Point3D p = new Point3D(7.0710678118655, 53.130102354156	, 45);
-      //  Point3D p0 = new Point3D(0, 0, 0);
-        double[] d = myCoords.azimuth_elevation_dist(humusLocation, building9);
-        Assert.fail();
+        double[] azimuth_elevation_dist = myCoords.azimuth_elevation_dist(building9,humusLocation);
+        double[] expected = {313.2582 , -2.326 , 493.0523};
+        Assert.assertArrayEquals(expected , azimuth_elevation_dist , 0.05);
+    }
+    @Test
+    public void testVector3D(){
+        Point3D actual = myCoords.vector3D(building9,humusLocation);
+        Point3D expected = new Point3D(337.6989920612881,-359.24920693881893,-20.0);
+        Assert.assertTrue(actual.equals(expected));
+    }
+    @Test
+    public void testIsValid(){
+        boolean expected = false;
+        Assert.assertTrue(myCoords.isValid_GPS_Point(new Point3D("-181,-92,9800"))==expected);
     }
 
 }

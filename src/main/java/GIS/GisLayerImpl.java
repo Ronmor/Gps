@@ -8,16 +8,25 @@ import java.util.Set;
 public class GisLayerImpl implements GIS_layer {
 
     Set<GIS_element> set = new HashSet<>();
+    private Meta_data data;
 
     @Override
     public Meta_data get_Meta_data() {
         // iterate over all elements
         // return new meta data with relevant utc and orientation
         // wtf is rellevant utc? ealiest? latest? first point added? last point added?
-        // what is the correct orientation of a collection? avg orientation?
-        return null;
+        return data;
     }
 
+    /**
+     * altough method has one call only , in which condition is checked , we wish to set this data only once, when a layer is first introduced
+     * @param LayerUtc is information for Meta_data
+     */
+    public void setData(long LayerUtc) {
+        if (isEmpty()) {
+            this.data = new MetaDataImpl(LayerUtc);
+        }
+    }
     /**
      * Returns the number of elements in this set (its cardinality).  If this
      * set contains more than <tt>Integer.MAX_VALUE</tt> elements, returns
