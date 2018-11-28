@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8e1400d-0aa0-4c9b-994d-3863d3d88c02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coords/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Coords/MyCoords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coords/MyCoords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/File_format/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/File_format/CsvReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GIS/Csv2GisLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GIS/Csv2GisLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GIS/GisElementImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GIS/GisElementImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GIS/GisLayerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GIS/GisLayerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GIS/GisProjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GIS/GisProjectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GIS/MetaDataImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GIS/MetaDataImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GIS/MultiCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GIS/MultiCsv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Coords/MyCoordsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Coords/MyCoordsTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="f8e1400d-0aa0-4c9b-994d-3863d3d88c02" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -117,23 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Csv2Kml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="401">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GIS/MetaDataImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -181,10 +156,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Kml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="114">
               <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -395,6 +370,12 @@
               <item name="Ex2-Ex4_test" type="616d4139:PackageViewModuleNode" />
               <item name="Coords" type="1f31426a:PackageElementNode" />
             </path>
+            <path>
+              <item name="Ex2-Ex4" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Ex2-Ex4" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="Ex2-Ex4_test" type="616d4139:PackageViewModuleNode" />
+              <item name="GIS" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -409,7 +390,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543426392012" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543426618872" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -556,7 +537,7 @@
       <workItem from="1543173849077" duration="30820000" />
       <workItem from="1543313484407" duration="5132000" />
       <workItem from="1543319994587" duration="1125000" />
-      <workItem from="1543332917237" duration="37769000" />
+      <workItem from="1543332917237" duration="38039000" />
     </task>
     <task id="LOCAL-00001" summary="Imported all basic lib needed for json.">
       <created>1542560871809</created>
@@ -671,7 +652,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195983000" />
+    <option name="totallyTimeSpent" value="196253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,7 +676,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4956076" weight="0.34013605" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49633968" visible="true" weight="0.23129252" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49633968" weight="0.23129252" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3282313" />
@@ -1024,13 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GIS/MultiCsvTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.micromata.jak/JavaAPIforKml/2.2.1/a72f7348892282f7b2afba63260f11a323b8c4a1/JavaAPIforKml-2.2.1-sources.jar!/de/micromata/opengis/kml/v_2_2_0/AbstractObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1350,16 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Csv2Kml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GIS/Csv2GisLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1438,8 +1402,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Kml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="114">
           <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GIS/MultiCsvTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Csv2Kml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
