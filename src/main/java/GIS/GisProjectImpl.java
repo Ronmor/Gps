@@ -1,21 +1,35 @@
 package GIS;
 
+import Geom.Point3D;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-//TODO - set UTC as the time that for Gis_element added to layer.
+
 public class GisProjectImpl implements GIS_project {
 
     private Set<GIS_layer> set = new HashSet<>();
+    private Meta_data data;
+    private long creationTime;
+
+    public GisProjectImpl() {
+        creationTime = System.currentTimeMillis();
+    }
 
     @Override
     public Meta_data get_Meta_data() {
-        // iterate over all layers
-        // return new meta data with relevant utc and orientation
-        // wtf is rellevant utc? ealiest? latest? first point added? last point added?
-        // what is the correct orientation of a collection? avg orientation?
-        return null;
+        return new Meta_data() {
+            @Override
+            public long getUTC() {
+                return creationTime;
+            }
+
+            @Override
+            public Point3D get_Orientation() {
+                return null;
+            }
+        };
     }
 
     /**

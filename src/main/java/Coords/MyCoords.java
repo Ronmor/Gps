@@ -1,7 +1,6 @@
 package Coords;
 
 import Geom.Point3D;
-//TODO - validate coordinates conversions , initialize isValid contion for all methods!
 public class MyCoords implements coords_converter{
         private long earthRadius = 6371*1000;
 
@@ -39,17 +38,10 @@ public class MyCoords implements coords_converter{
     private Point3D toRadian(Point3D CalculatedDiff){
         return new Point3D(d2r(CalculatedDiff.x()) , d2r(CalculatedDiff.y()),CalculatedDiff.z());
     }
-    public Point3D toMeter(Point3D gps,Point3D local_vector_in_meter){
+    private Point3D toMeter(Point3D gps, Point3D local_vector_in_meter){
         Point3D pointsAt = toRadian(diff(gps,local_vector_in_meter));
         double lonNorm = Cos(d2r(gps.x()));
         return new Point3D(earthRadius*Sin(pointsAt.x()),earthRadius*Sin(pointsAt.y())*lonNorm,pointsAt.z());
-    }
-
-    private Point3D Reverse_Meter_values_toRad(Point3D given_in_meters,Point3D start_point){
-        double radded_lat = ArcSin(given_in_meters.x()/earthRadius);
-        double lonNorm = Cos(d2r(start_point.x()));
-        double raded_lon = ArcSin((given_in_meters.y()/(earthRadius*lonNorm)));
-        return new Point3D(radded_lat,raded_lon,given_in_meters.z());
     }
 
     /**
@@ -72,8 +64,8 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D vector3D(Point3D gps0, Point3D gps1) {
-        Point3D point3D = isValid_GPS_Point(toMeter(gps0, gps1)) ? toMeter(gps0, gps1) : null;
-        return point3D;
+        boolean verify_coords = isValid_GPS_Point(gps0) && isValid_GPS_Point(gps1);
+        return verify_coords ? toMeter(gps0,gps1) : null;
     }
 
     /**
@@ -126,7 +118,7 @@ public class MyCoords implements coords_converter{
      * @return Delta(Y)
      */
     private double dY(Point3D p, Point3D p1){ return p1.y()-p.y();}
-    public double dX(Point3D p , Point3D p1){ return p1.x()-p.x();}
+    private double dX(Point3D p, Point3D p1){ return p1.x()-p.x();}
     private double dZ(Point3D p, Point3D p1){ return p1.z()-p.z();}
     private double d2r(double x){
         return Point3D.d2r(x);
@@ -140,6 +132,6 @@ public class MyCoords implements coords_converter{
         return p.distance3D(vectorZero);
     }
     private double ArcCos(double a){ return Math.acos(a); }
-    public double angleBetween2Vectors(Point3D v , Point3D u){ return ArcCos(Point3D.productOfVectors(v,u) / sizeOfVector(v) * sizeOfVector(u));}
+    private double angleBetween2Vectors(Point3D v, Point3D u){ return ArcCos(Point3D.productOfVectors(v,u) / sizeOfVector(v) * sizeOfVector(u));}
 
 }
