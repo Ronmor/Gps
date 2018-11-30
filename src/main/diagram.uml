@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="106.0" y="295.0">GIS.Meta_data</node>
+    <node x="588.8676470588235" y="386.0">Geom.Point3D</node>
+    <node x="559.0" y="80.0">GIS.GisProjectImpl</node>
+    <node x="229.0" y="284.0">GIS.GisElementImpl</node>
+    <node x="551.0" y="295.0">Geom.Geom_element</node>
+    <node x="17.0" y="295.0">File_format.Kml</node>
+    <node x="69.0" y="419.0">GIS.MetaDataImpl</node>
+    <node x="438.0" y="0.0">GIS.GIS_project</node>
+    <node x="275.1911764705882" y="91.0">GIS.MultiCsv</node>
+    <node x="719.1176470588235" y="284.0">Coords.MyCoords</node>
+    <node x="0.0" y="91.0">File_format.CsvReader</node>
+    <node x="192.8161764705882" y="0.0">GIS.Csv2GisLayer</node>
+    <node x="444.0" y="91.0">GIS.GIS_layer</node>
+    <node x="323.5" y="193.0">GIS.GIS_element</node>
+    <node x="4.5" y="193.0">File_format.Csv2Kml</node>
+    <node x="493.25" y="182.0">GIS.GisLayerImpl</node>
+    <node x="716.1176470588235" y="193.0">Coords.coords_converter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Geom.Point3D" target="Geom.Geom_element">
+      <point x="-60.75" y="-59.0" />
+      <point x="649.6176470588235" y="361.0" />
+      <point x="615.0" y="361.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="GIS.GIS_element" target="GIS.GIS_layer">
+      <point x="0.0" y="-15.0" />
+      <point x="380.0" y="157.0" />
+      <point x="467.75" y="157.0" />
+      <point x="-23.75" y="15.0" />
+    </edge>
+    <edge source="File_format.Kml" target="File_format.Csv2Kml">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Coords.MyCoords" target="Coords.coords_converter">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="GIS.GisLayerImpl" target="GIS.GIS_layer">
+      <point x="0.0" y="-26.0" />
+      <point x="566.25" y="157.0" />
+      <point x="515.25" y="157.0" />
+      <point x="23.75" y="15.0" />
+    </edge>
+    <edge source="Geom.Geom_element" target="GIS.GIS_element">
+      <point x="0.0" y="-15.0" />
+      <point x="615.0" y="259.0" />
+      <point x="417.66666666666663" y="259.0" />
+      <point x="37.66666666666663" y="15.0" />
+    </edge>
+    <edge source="GIS.GIS_layer" target="GIS.GIS_project">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="GIS.MultiCsv" target="GIS.Csv2GisLayer">
+      <point x="-23.75" y="-15.0" />
+      <point x="298.9411764705882" y="55.0" />
+      <point x="280.5661764705882" y="55.0" />
+      <point x="29.25" y="15.0" />
+    </edge>
+    <edge source="GIS.MetaDataImpl" target="GIS.Meta_data">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="File_format.CsvReader" target="GIS.Csv2GisLayer">
+      <point x="0.0" y="-15.0" />
+      <point x="51.5" y="55.0" />
+      <point x="222.0661764705882" y="55.0" />
+      <point x="-29.25" y="15.0" />
+    </edge>
+    <edge source="GIS.GisElementImpl" target="GIS.GIS_element">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="GIS.Meta_data" target="GIS.GIS_element">
+      <point x="0.0" y="-15.0" />
+      <point x="157.5" y="259.0" />
+      <point x="342.33333333333337" y="259.0" />
+      <point x="-37.66666666666663" y="15.0" />
+    </edge>
+    <edge source="Geom.Point3D" target="Coords.MyCoords">
+      <point x="60.75" y="-59.0" />
+      <point x="771.1176470588235" y="361.0" />
+      <point x="785.6176470588235" y="361.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="GIS.GisProjectImpl" target="GIS.GIS_project">
+      <point x="0.0" y="-26.0" />
+      <point x="636.5" y="55.0" />
+      <point x="527.1666666666666" y="55.0" />
+      <point x="35.66666666666663" y="15.0" />
+    </edge>
+    <edge source="GIS.MultiCsv" target="GIS.GIS_project">
+      <point x="23.75" y="-15.0" />
+      <point x="346.4411764705882" y="55.0" />
+      <point x="455.83333333333337" y="55.0" />
+      <point x="-35.66666666666663" y="15.0" />
+    </edge>
+    <edge source="File_format.Csv2Kml" target="File_format.CsvReader">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="328.5" y="247.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
