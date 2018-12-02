@@ -2,20 +2,16 @@ package File_format;
 
 import GIS.GIS_element;
 import GIS.GIS_layer;
-import Geom.Geom_element;
 import Geom.Point3D;
 
-import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class Kml {
 

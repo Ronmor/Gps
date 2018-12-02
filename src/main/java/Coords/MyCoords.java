@@ -1,9 +1,10 @@
 package Coords;
 
 import Geom.Point3D;
+
+
 public class MyCoords implements coords_converter{
         private long earthRadius = 6371*1000;
-
         public MyCoords(){}
         /**
      * computes a new point which is the gps point transformed by a 3D vector (in meters)

@@ -1,7 +1,6 @@
 package File_format;
 
 import GIS.*;
-//import de.micromata.opengis.kml.v_2_2_0.Kml;
 
 import java.io.FileNotFoundException;
 
