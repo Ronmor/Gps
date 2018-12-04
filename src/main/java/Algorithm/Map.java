@@ -16,4 +16,6 @@ public class Map {
      */
 
     private static final String map = "Ariel1.png";
+
+    
 }
