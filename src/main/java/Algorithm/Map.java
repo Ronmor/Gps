@@ -17,5 +17,11 @@ public class Map {
 
     private static final String map = "Ariel1.png";
 
-    
+    // read image through a MenuBar object.
+    //try img=Image.Io.read
+
+    //gui class needs to implement MouseListener interface , define it's methods!
+    // to set listener to class type : this.addMouseListener(this)
+    //asuming someones press over a coordinate , in the void paint method (Grapics g) , imply g.fillOval and set its coords
+    //there will be a repaint() each time we want to restart message displayed on to frame.
 }
