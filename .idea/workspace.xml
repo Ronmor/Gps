@@ -1,0 +1,1458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8e1400d-0aa0-4c9b-994d-3863d3d88c02" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Coords/MyCoordsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/File_format/CsvWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="20" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Utils/MyRandomTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/production/classes/Algorithm/Map.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/File_format/CsvReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Kml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Csv2Kml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Geom/Point3D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>set</find>
+      <find>todo</find>
+      <find>git</find>
+    </findStrings>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/Gps/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="69b129f8-8c6d-4e4f-a5cf-90de51399880" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/File_format/Json_101.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Coords/MyCoordsTestsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Coords/MyVector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GisElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GIS_project.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/MetaData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GIS/MultiCsvTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Coords/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GisElementImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/File_format/Main2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/Kml.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Coords/MyCoordsTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/MetaDataImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GisLayerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GisProjectImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/File_format/CsvWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Geom/Circle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/MyRandom.java" />
+        <option value="$PROJECT_DIR$/src/main/java/File_format/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Geom/Geom_element.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Geom/Point3D.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/MultiCsv.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GIS_layer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/GIS_element.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/Meta_data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Coords/MyCoords.java" />
+        <option value="$PROJECT_DIR$/src/main/java/File_format/CsvReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/File_format/Kml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/File_format/Csv2Kml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithm/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithm/ShortestPathAlgo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/Fruit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithm/Path.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/Csv2GisLayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/PackMan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GIS/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithm/Map.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Utils/MyRandomTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="457" />
+    <option name="y" value="9" />
+    <option name="width" value="1063" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource PackagesPane="true" ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Geom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="GIS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="File_format" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Geom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2-Ex4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2-Ex4" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="GIS" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543957040224" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/שנה ב/סמסטר א/מונחה עצמים/Github_ReadMepics" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="GIS" />
+      <recent name="Coords" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="File_format" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MyRandomTest">
+    <configuration name="Csv2Kml" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="File_format.Csv2Kml" />
+      <module name="Ex2-Ex4_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="File_format.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GIS.Main1" />
+      <module name="Ex2-Ex4_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="File_format.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="File_format.Main2" />
+      <module name="Ex2-Ex4_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="File_format.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GIS.MultiCsv" />
+      <module name="Ex2-Ex4_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="File_format.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyCoordsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2-Ex4_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Coords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Coords" />
+      <option name="MAIN_CLASS_NAME" value="Coords.MyCoordsTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyRandomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex2-Ex4.Ex2-Ex4.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Utils" />
+      <option name="MAIN_CLASS_NAME" value="Utils.MyRandomTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Csv2Kml" />
+      <item itemvalue="Application.Main2" />
+      <item itemvalue="Application.MultiCsv" />
+      <item itemvalue="Application.Main1" />
+      <item itemvalue="JUnit.MyCoordsTests" />
+      <item itemvalue="JUnit.MyRandomTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyRandomTest" />
+        <item itemvalue="Application.MultiCsv" />
+        <item itemvalue="JUnit.MyCoordsTests" />
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8e1400d-0aa0-4c9b-994d-3863d3d88c02" name="Default Changelist" comment="" />
+      <created>1542469913537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542469913537</updated>
+      <workItem from="1542469922634" duration="2500000" />
+      <workItem from="1542531970097" duration="3140000" />
+      <workItem from="1542557691170" duration="9706000" />
+      <workItem from="1542630818759" duration="8015000" />
+      <workItem from="1542641384706" duration="13014000" />
+      <workItem from="1542705449618" duration="2300000" />
+      <workItem from="1542798081518" duration="1786000" />
+      <workItem from="1542896261172" duration="12394000" />
+      <workItem from="1542967224196" duration="18323000" />
+      <workItem from="1543051275351" duration="436000" />
+      <workItem from="1543051849207" duration="29933000" />
+      <workItem from="1543139845807" duration="17871000" />
+      <workItem from="1543159837432" duration="1533000" />
+      <workItem from="1543168419178" duration="186000" />
+      <workItem from="1543173849077" duration="30820000" />
+      <workItem from="1543313484407" duration="5132000" />
+      <workItem from="1543319994587" duration="1125000" />
+      <workItem from="1543332917237" duration="47688000" />
+      <workItem from="1543762991714" duration="11403000" />
+      <workItem from="1543928674731" duration="4041000" />
+      <workItem from="1543935618310" duration="11834000" />
+      <workItem from="1544103460103" duration="594000" />
+    </task>
+    <task id="LOCAL-00001" summary="Imported all basic lib needed for json.">
+      <created>1542560871809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542560871809</updated>
+    </task>
+    <task id="LOCAL-00002" summary="created MyCoord">
+      <created>1542560943983</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542560943983</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created MyCoord">
+      <created>1542654382446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542654382446</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated MyCoords">
+      <created>1542905356197</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542905356197</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated MyCoords">
+      <created>1542905515383</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542905515383</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Editing MyCoords">
+      <created>1542906243913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542906243913</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Editing MyCoords">
+      <created>1542909639664</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542909639664</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updatde for MyCoords , fileFormats , GIS">
+      <created>1543085832080</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543085832080</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updatde for MyCoords , fileFormats , GIS">
+      <created>1543157693316</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543157693316</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Project update , Mycoords Junit added">
+      <created>1543258254202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543258254204</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Project update , Mycoords Junit added">
+      <created>1543258702689</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1543258702689</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Class_Diagram_EX2">
+      <created>1543572199567</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543572199567</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Class_Diagram_Ex2">
+      <created>1543572831613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1543572831613</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adaptation to Ex_3">
+      <created>1543777873374</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1543777873374</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Project update , Mycoords Junit added">
+      <created>1543933478189</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1543933478189</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MyCoordsTests - 2018.11.26 at 18h 00m 35s.xml">
+      <configuration name="MyCoordsTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests - 2018.11.26 at 18h 59m 06s.xml">
+      <configuration name="MyCoordsTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests_testVector3D - 2018.11.26 at 19h 15m 09s.xml">
+      <configuration name="MyCoordsTests.testVector3D" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests_testVector3D - 2018.11.26 at 19h 16m 27s.xml">
+      <configuration name="MyCoordsTests.testVector3D" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests_testVector3D - 2018.11.26 at 19h 18m 12s.xml">
+      <configuration name="MyCoordsTests.testVector3D" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests_testIsValid - 2018.11.26 at 19h 22m 47s.xml">
+      <configuration name="MyCoordsTests.testIsValid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests_testIsValid - 2018.11.27 at 12h 14m 56s.xml">
+      <configuration name="MyCoordsTests.testIsValid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyCoordsTests - 2018.11.28 at 16h 56m 13s.xml">
+      <configuration name="MyCoordsTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyRandomTest - 2018.12.04 at 18h 09m 53s.xml">
+      <configuration name="MyRandomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyRandomTest - 2018.12.04 at 18h 32m 43s.xml">
+      <configuration name="MyRandomTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="233774000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102118" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" weight="0.34013605" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49633968" weight="0.23129252" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3282313" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.505295" side_tool="true" weight="0.34013605" />
+      <window_info anchor="bottom" id="Build" order="11" sideWeight="0.49924356" weight="0.3282313" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49621785" weight="0.3282313" />
+      <window_info anchor="bottom" id="Thumbnails" order="13" sideWeight="0.49926794" weight="0.3295082" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.32993197" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12934947" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4956076" weight="0.34013605" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49633968" weight="0.23129252" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3282313" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5036603" side_tool="true" weight="0.39836067" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49853587" weight="0.3282313" />
+      <window_info anchor="bottom" id="Thumbnails" order="13" sideWeight="0.49926794" weight="0.3295082" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.32993197" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Imported all basic lib needed for json." />
+    <MESSAGE value="created MyCoord" />
+    <MESSAGE value="Updated MyCoords" />
+    <MESSAGE value="Editing MyCoords" />
+    <MESSAGE value="Updatde for MyCoords , fileFormats , GIS" />
+    <MESSAGE value="Class_Diagram_EX2" />
+    <MESSAGE value="Class_Diagram_Ex2" />
+    <MESSAGE value="Adaptation to Ex_3" />
+    <MESSAGE value="Project update , Mycoords Junit added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project update , Mycoords Junit added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Coords/MyCoords.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>layer.get_Meta_data().getUTC()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>layer</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lines[2].split(&quot;,&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>lines</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.toDegrees(phi)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.toDegrees(theta)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.micromata.jak/JavaAPIforKml/2.2.1/a72f7348892282f7b2afba63260f11a323b8c4a1/JavaAPIforKml-2.2.1-sources.jar!/de/micromata/opengis/kml/v_2_2_0/KmlFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="e#6634#6635#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#9891#9892#0" expanded="true" />
+            <element signature="e#9929#9930#0" expanded="true" />
+            <element signature="e#10037#10038#0" expanded="true" />
+            <element signature="e#10071#10072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.micromata.jak/JavaAPIforKml/2.2.1/a72f7348892282f7b2afba63260f11a323b8c4a1/JavaAPIforKml-2.2.1-sources.jar!/de/micromata/opengis/kml/v_2_2_0/Geometry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3315">
+          <caret line="76" column="66" lean-forward="true" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.micromata.jak/JavaAPIforKml/2.2.1/a72f7348892282f7b2afba63260f11a323b8c4a1/JavaAPIforKml-2.2.1-sources.jar!/de/micromata/opengis/kml/v_2_2_0/AltitudeMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.micromata.jak/JavaAPIforKml/2.2.1/a72f7348892282f7b2afba63260f11a323b8c4a1/JavaAPIforKml-2.2.1-sources.jar!/de/micromata/opengis/kml/v_2_2_0/Kml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+          <folding>
+            <element signature="e#2619#4117#0" />
+            <element signature="e#4220#6585#0" />
+            <element signature="e#7969#7970#0" expanded="true" />
+            <element signature="e#7992#7993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/modules.uml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Coords/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/main.java" />
+    <entry file="uml://JAVA/GIS">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>GIS</OriginalElement>
+          <nodes>
+            <node x="" y="">GIS.MultiCsvTest</node>
+            <node x="" y="">GIS.GIS_project</node>
+            <node x="" y="">GIS.GIS_element</node>
+            <node x="" y="">GIS.Meta_data</node>
+            <node x="" y="">GIS.GisElementImpl</node>
+            <node x="" y="">GIS.MultiCsv</node>
+            <node x="" y="">GIS.MetaDataImpl</node>
+            <node x="" y="">GIS.GisLayerImpl</node>
+            <node x="" y="">GIS.Kml</node>
+            <node x="" y="">GIS.Csv2GisLayer</node>
+            <node x="" y="">GIS.GisProjectImpl</node>
+            <node x="" y="">GIS.GIS_layer</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.767816091954023" x="210.0" y="198.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Main2.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/GIS/MultiCsvTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/EX_2.uml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Coords/coords_converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#coords_converter#0" />
+            <element signature="docComment;method#isValid_GPS_Point#0;class#coords_converter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Json_101.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Geom/Geom_element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/diagram.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="37.0" y="243.0">GIS.Meta_data</node>
+            <node x="0.0" y="80.0">Geom.Point3D</node>
+            <node x="222.0" y="323.0">GIS.GisProjectImpl</node>
+            <node x="288.0" y="80.0">GIS.GisElementImpl</node>
+            <node x="57.5" y="0.0">Geom.Geom_element</node>
+            <node x="139.0" y="597.0">File_format.Kml</node>
+            <node x="0.0" y="323.0">GIS.MetaDataImpl</node>
+            <node x="246.0" y="243.0">GIS.GIS_project</node>
+            <node x="494.0" y="420.0">GIS.MultiCsv</node>
+            <node x="3.0" y="500.0">Coords.MyCoords</node>
+            <node x="346.0" y="420.0">File_format.CsvReader</node>
+            <node x="184.0" y="420.0">GIS.Csv2GisLayer</node>
+            <node x="447.5" y="243.0">GIS.GIS_layer</node>
+            <node x="382.5" y="0.0">GIS.GIS_element</node>
+            <node x="0.0" y="597.0">File_format.Csv2Kml</node>
+            <node x="422.0" y="323.0">GIS.GisLayerImpl</node>
+            <node x="0.0" y="420.0">Coords.coords_converter</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Geom.Point3D" target="Geom.Geom_element">
+              <point x="0.0" y="-59.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="GIS.GisLayerImpl" target="GIS.GIS_layer">
+              <point x="0.0" y="-26.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="Coords.MyCoords" target="Coords.coords_converter">
+              <point x="0.0" y="-26.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="GIS.GisElementImpl" target="GIS.GIS_element">
+              <point x="0.0" y="-26.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="GIS.MetaDataImpl" target="GIS.Meta_data">
+              <point x="0.0" y="-26.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="GIS.GisProjectImpl" target="GIS.GIS_project">
+              <point x="0.0" y="-26.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="329.0" y="151.0" />
+          <SelectedNodes>
+            <node>GIS.Meta_data</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/MultiCsv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/GIS_layer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/GIS_project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/GisProjectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;method#size#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#isEmpty#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#contains#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#iterator#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#toArray#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#toArray#1;class#GisProjectImpl#0" />
+            <element signature="docComment;method#add#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#remove#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#containsAll#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#addAll#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#retainAll#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#removeAll#0;class#GisProjectImpl#0" />
+            <element signature="docComment;method#clear#0;class#GisProjectImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/MetaDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/Meta_data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/GisLayerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="docComment;method#setData#0;class#GisLayerImpl#0" />
+            <element signature="docComment;method#size#0;class#GisLayerImpl#0" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="docComment;method#isEmpty#0;class#GisLayerImpl#0" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="docComment;method#contains#0;class#GisLayerImpl#0" />
+            <element signature="e#2665#2666#0" expanded="true" />
+            <element signature="e#2703#2704#0" expanded="true" />
+            <element signature="docComment;method#iterator#0;class#GisLayerImpl#0" />
+            <element signature="e#3040#3041#0" expanded="true" />
+            <element signature="e#3077#3078#0" expanded="true" />
+            <element signature="docComment;method#toArray#0;class#GisLayerImpl#0" />
+            <element signature="e#3826#3827#0" expanded="true" />
+            <element signature="e#3862#3863#0" expanded="true" />
+            <element signature="docComment;method#toArray#1;class#GisLayerImpl#0" />
+            <element signature="e#6092#6093#0" expanded="true" />
+            <element signature="e#6129#6130#0" expanded="true" />
+            <element signature="docComment;method#add#0;class#GisLayerImpl#0" />
+            <element signature="e#7988#7989#0" expanded="true" />
+            <element signature="e#8031#8032#0" expanded="true" />
+            <element signature="docComment;method#remove#0;class#GisLayerImpl#0" />
+            <element signature="e#9416#9417#0" expanded="true" />
+            <element signature="e#9452#9453#0" expanded="true" />
+            <element signature="docComment;method#containsAll#0;class#GisLayerImpl#0" />
+            <element signature="e#10665#10666#0" expanded="true" />
+            <element signature="e#10706#10707#0" expanded="true" />
+            <element signature="docComment;method#addAll#0;class#GisLayerImpl#0" />
+            <element signature="e#12227#12228#0" expanded="true" />
+            <element signature="e#12263#12264#0" expanded="true" />
+            <element signature="docComment;method#retainAll#0;class#GisLayerImpl#0" />
+            <element signature="e#13751#13752#0" expanded="true" />
+            <element signature="e#13790#13791#0" expanded="true" />
+            <element signature="docComment;method#removeAll#0;class#GisLayerImpl#0" />
+            <element signature="e#15208#15209#0" expanded="true" />
+            <element signature="e#15243#15244#0" expanded="true" />
+            <element signature="docComment;method#clear#0;class#GisLayerImpl#0" />
+            <element signature="e#15580#15581#0" expanded="true" />
+            <element signature="e#15607#15608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/ShortestPathAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="86" lean-forward="true" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="122" selection-start-line="4" selection-start-column="122" selection-end-line="4" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/MyRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/GisElementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#translate#0;class#GisElementImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="165" column="22" selection-start-line="165" selection-start-column="19" selection-end-line="165" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/ronmo.xml" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/PackMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/Fruit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/GIS_element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GIS/Csv2GisLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="17" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Coords/MyCoords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;method#add#0;class#MyCoords#0" />
+            <element signature="method#add#0;class#MyCoords#0" />
+            <element signature="method#diff#0;class#MyCoords#0" />
+            <element signature="method#toRadian#0;class#MyCoords#0" />
+            <element signature="method#toMeter#0;class#MyCoords#0" />
+            <element signature="docComment;method#distance3d#0;class#MyCoords#0" />
+            <element signature="method#distance3d#0;class#MyCoords#0" />
+            <element signature="docComment;method#vector3D#0;class#MyCoords#0" />
+            <element signature="method#vector3D#0;class#MyCoords#0" />
+            <element signature="docComment;method#azimuth_elevation_dist#0;class#MyCoords#0" />
+            <element signature="method#azimuth_elevation_dist#0;class#MyCoords#0" />
+            <element signature="docComment;method#isValid_GPS_Point#0;class#MyCoords#0" />
+            <element signature="method#isValid_GPS_Point#0;class#MyCoords#0" />
+            <element signature="docComment;method#dY#0;class#MyCoords#0" />
+            <element signature="method#sizeOfVector#0;class#MyCoords#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Geom/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/GIS/Game.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/Geom/Circle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Coords/MyCoordsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithm/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/CsvWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/MyRandomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/Algorithm/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Kml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/Csv2Kml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Geom/Point3D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/File_format/CsvReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main|Ex2-Ex4.Ex2-Ex4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: com.googlecode.json-simple:json-simple:1.1.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
