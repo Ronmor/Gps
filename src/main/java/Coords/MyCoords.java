@@ -14,10 +14,6 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D add(Point3D gps, Point3D local_vector_in_meter) {
-        boolean isValid = isValid_GPS_Point(gps);
-                if (!isValid) {
-               System.err.print("Invalid coordinates");
-                }
                 double radded_lat = ArcSin(local_vector_in_meter.x() / earthRadius);
                 double latDifference = r2d(radded_lat);
                 double destination_latValue = gps.x() + latDifference;
@@ -30,7 +26,7 @@ public class MyCoords implements coords_converter{
             }
 
 
-    private Point3D diff(Point3D gps, Point3D local_vector_in_meter){
+    public Point3D diff(Point3D gps, Point3D local_vector_in_meter){
         double xDiff = -gps.x()+local_vector_in_meter.x();
         double yDiff = -gps.y()+local_vector_in_meter.y();
         double zDiff = -gps.z()+local_vector_in_meter.z();
@@ -65,8 +61,7 @@ public class MyCoords implements coords_converter{
      */
     @Override
     public Point3D vector3D(Point3D gps0, Point3D gps1) {
-        boolean verify_coords = isValid_GPS_Point(gps0) && isValid_GPS_Point(gps1);
-        return verify_coords ? toMeter(gps0,gps1) : null;
+        return  toMeter(gps0,gps1);
     }
 
     /**

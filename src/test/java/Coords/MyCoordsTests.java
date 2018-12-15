@@ -10,7 +10,7 @@ public class MyCoordsTests {
     private Point3D humusLocation;
     private Point3D local_vector_in_meter; // Set Coordinates as you want.
 
-    MyCoords myCoords = new MyCoords();
+    private MyCoords myCoords = new MyCoords();
 
     @Before
     public void setup() {

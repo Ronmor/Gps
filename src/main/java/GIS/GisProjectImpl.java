@@ -2,14 +2,11 @@ package GIS;
 
 import Geom.Point3D;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class GisProjectImpl implements GIS_project {
 
-    private Set<GIS_layer> set = new HashSet<>();
+    private List<GIS_layer> set = new LinkedList<>();
     private Meta_data data;
     private long creationTime;
 

@@ -32,7 +32,7 @@ public class GisElementImpl implements GIS_element {
     @Override
     public void translate(Point3D vec) {
         MyCoords myCoords = new MyCoords();
-        GIS_element element = new GisElementImpl(vec,this.data);
+        GIS_element element = new GisElementImpl(vec, this.data);
         Point3D translate = myCoords.vector3D(new Point3D(element.getGeom().toString()),vec);
         GIS_element translated = new GisElementImpl(translate,element.getData());
         this.geom = translated.getGeom();

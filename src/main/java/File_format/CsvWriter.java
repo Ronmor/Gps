@@ -22,4 +22,5 @@ public class CsvWriter {
         //Table Columns are set.
         //TODO - complete , append a list of coordinates
     }
+
 }

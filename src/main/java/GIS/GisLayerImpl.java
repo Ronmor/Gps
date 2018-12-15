@@ -15,15 +15,20 @@ public class GisLayerImpl implements GIS_layer {
 
     public GisLayerImpl() {
         creationTime = System.currentTimeMillis();
+        data = new MetaDataImpl(creationTime);
     }
 
-    @Override
-    public Meta_data get_Meta_data() {
-        // return new meta data with relevant utc and orientation
-        return new Meta_data() {
+    public GisLayerImpl(Meta_data data) {
+        creationTime = System.currentTimeMillis();
+        this.data = new Meta_data() {
             @Override
             public long getUTC() {
                 return creationTime;
+            }
+
+            @Override
+            public String toString() {
+                return data.toString();
             }
 
             @Override
@@ -33,15 +38,12 @@ public class GisLayerImpl implements GIS_layer {
         };
     }
 
-    /**
-     * altough method has one call only , in which condition is checked , we wish to set this data only once, when a layer is first introduced
-     * @param LayerUtc is information for Meta_data
-     */
-    public void setData(long LayerUtc) {
-        if (this.data == null) {
-            this.data = new MetaDataImpl(LayerUtc);
-        }
+    @Override
+    public Meta_data get_Meta_data() {
+        // return new meta data with relevant utc and orientation
+        return data;
     }
+
     /**
      * Returns the number of elements in this set (its cardinality).  If this
      * set contains more than <tt>Integer.MAX_VALUE</tt> elements, returns
