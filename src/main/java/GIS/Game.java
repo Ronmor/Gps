@@ -55,6 +55,7 @@ public class Game {
         PrintWriter printWriter = null;
         try {
             printWriter = new PrintWriter(new File(this +"Game.csv"));
+            System.out.println("Your game saved to directory");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
