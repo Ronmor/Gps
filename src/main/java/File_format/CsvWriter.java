@@ -1,26 +1,54 @@
 package File_format;
 
+import GIS.Fruit;
+import GIS.Game;
+import GIS.Packman;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class CsvWriter {
-        //TODO - finish class , or if not really needed , mute class .   if class will be used , test with Junit Creation of csv file , using search algorithm
-
-    public static void main (String[] args){
-        PrintWriter printWriter = null;
+    private PrintWriter printWriter;
+    public void SaveGameCsv (Game game , String nameOfGame){
         try {
-            printWriter = new PrintWriter(new File("CoordinatesTable.csv"));
+            printWriter = new PrintWriter(new File(nameOfGame+".csv"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            return;
         }
         StringBuilder sb = new StringBuilder();
-        sb.append("Current lat:" + ',');
-        sb.append("Current Lon:" + ',');
+        sb.append("Type" + ',');
+        sb.append("Id:" + ',');
+        sb.append("Lat:" + ',');
+        sb.append("Lon:" + ',');
+        sb.append("Alt:" + ',');
+        sb.append("Speed/Weight:" + ',');
+        sb.append("Radius" + ',');
+        sb.append(game.getPackMansCopy().size() + ',');
+        sb.append(game.getFruitsCopy().size() + ',');
         sb.append('\n');
-        //Table Columns are set.
-        //TODO - complete , append a list of coordinates
+        for (Packman packman : game.getPackMansCopy()){
+            sb.append("P" + ',');
+            sb.append(packman.getId() + ',');
+            sb.append(packman.getCoordinates().x() + ',');
+            sb.append(packman.getCoordinates().y() + ',');
+            sb.append(packman.getCoordinates().z() + ',');
+            sb.append(packman.getSpeed() + ',');
+            sb.append(packman.getEatingRadius() + ',');
+            sb.append('\n');
+        }
+        for (Fruit fruit : game.getFruitsCopy()){
+            sb.append("F" + ',');
+            sb.append(fruit.getId() + ',');
+            sb.append(fruit.getCoordinates().x() + ',');
+            sb.append(fruit.getCoordinates().y() + ',');
+            sb.append(fruit.getCoordinates().z() + ',');
+            sb.append(fruit.getWeight() + ',');
+            sb.append('\n');
+        }
+        printWriter.write(sb.toString());
+        printWriter.close();
+
     }
 
 }

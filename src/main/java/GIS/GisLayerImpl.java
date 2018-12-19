@@ -11,31 +11,17 @@ public class GisLayerImpl implements GIS_layer {
 
     Set<GIS_element> set = new HashSet<>();
     private Meta_data data;
-    private long creationTime;
+    private long creationTime = 0;
+
 
     public GisLayerImpl() {
         creationTime = System.currentTimeMillis();
         data = new MetaDataImpl(creationTime);
     }
 
-    public GisLayerImpl(Meta_data data) {
-        creationTime = System.currentTimeMillis();
-        this.data = new Meta_data() {
-            @Override
-            public long getUTC() {
-                return creationTime;
-            }
-
-            @Override
-            public String toString() {
-                return data.toString();
-            }
-
-            @Override
-            public Point3D get_Orientation() {
-                return null;
-            }
-        };
+    public GisLayerImpl(Meta_data data, long creationTime) {
+        this.data = data;
+        this.creationTime = creationTime;
     }
 
     @Override

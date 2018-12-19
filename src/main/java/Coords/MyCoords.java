@@ -16,7 +16,7 @@ public class MyCoords implements coords_converter{
     public Point3D add(Point3D gps, Point3D local_vector_in_meter) {
                 double radded_lat = ArcSin(local_vector_in_meter.x() / earthRadius);
                 double latDifference = r2d(radded_lat);
-                double destination_latValue = gps.x() + latDifference;
+                double destination_latValue = gps.x() + latDifference;  //change to minus for map conversions
                 double lonNorm = Cos(d2r(gps.x()));
                 double raded_lon = ArcSin((local_vector_in_meter.y() / (earthRadius * lonNorm)));
                 double lonDifference = r2d(raded_lon);

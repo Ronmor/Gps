@@ -1,6 +1,7 @@
 package GIS;
 
 import File_format.CsvReader;
+import File_format.CsvWriter;
 import Geom.Point3D;
 
 import java.io.File;
@@ -21,6 +22,12 @@ public class Game {
      */
     private Set<Fruit> fruits = new HashSet<>();
     private Set<Packman> packmen = new HashSet<>();
+    
+    public Game(Game other){
+        fruits = other.getFruitsCopy();
+        packmen = other.getPackMansCopy();
+    }
+
     public Game(){
     }
     public Game(String csvFile) {
@@ -51,61 +58,40 @@ public class Game {
             System.err.print("Wrong Input!");
         }
     }
-    public void toCsvFile() {
-        PrintWriter printWriter = null;
-        try {
-            printWriter = new PrintWriter(new File(this +"Game.csv"));
-            System.out.println("Your game saved to directory");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+    public void toCsv () throws FileNotFoundException {
+        PrintWriter printWriter = new PrintWriter(new File(stats()+".csv"));
+        StringBuilder sb = new StringBuilder();
+        sb.append("Type" + ',');
+        sb.append("Id" + ',');
+        sb.append("Lat" + ',');
+        sb.append("Lon" + ',');
+        sb.append("Alt" + ',');
+        sb.append("Speed/Weight" + ',');
+        sb.append("Radius" + ',');
+        sb.append(""+packmen.size() + ',');
+        sb.append(""+fruits.size() + '\n');
         for (Packman packman : packmen){
-            String[] pData = packManData(packman);
-            for (int i = 0; i < pData.length; i++) {
-                printWriter.print(pData[i]);
-                if(i != pData.length-1) {
-                    printWriter.print(",");
-                }
-            }
-            printWriter.println();
+            sb.append("P" + ',');
+            sb.append(""+packman.getId() + ',');
+            sb.append(""+packman.getCoordinates().x() + ',');
+            sb.append(""+packman.getCoordinates().y() + ',');
+            sb.append(""+packman.getCoordinates().z() + ',');
+            sb.append(""+packman.getSpeed() + ',');
+            sb.append("" + packman.getEatingRadius()).append('\n');
         }
         for (Fruit fruit : fruits){
-            String[] fData = fruitData(fruit);
-            for (int i = 0; i <fData.length ; i++) {
-                printWriter.print(fData[i]);
-                if(i != fData.length-1) {
-                    printWriter.print(",");
-                }
-            }
-            printWriter.println();
+            sb.append("F" + ',');
+            sb.append(""+fruit.getId() + ',');
+            sb.append(""+fruit.getCoordinates().x() + ',');
+            sb.append(""+fruit.getCoordinates().y() + ',');
+            sb.append(""+fruit.getCoordinates().z() + ',');
+            sb.append(""+fruit.getWeight()).append('\n');
         }
+        printWriter.write(sb.toString());
         printWriter.close();
     }
-
     private boolean isPackMan(String str) {
         return str.toLowerCase().equals("p");
-    }
-    private String[] packManData(Packman packman){
-            String[] pacman = new String[6];
-            pacman[0] = "P";
-            pacman[1] = ""+packman.getId();
-            pacman[2] = ""+packman.getCoordinates().x();
-            pacman[3] = ""+packman.getCoordinates().y();
-            pacman[4] = ""+packman.getCoordinates().z();
-            pacman[5] = ""+packman.getSpeed();
-            pacman[6] = ""+packman.getEatingRadius();
-            return pacman;
-    }
-    private String[] fruitData(Fruit fruit){
-        String[] sFruit = new String[5];
-        sFruit[0] = "F";
-        sFruit[1] = ""+fruit.getId();
-        sFruit[2] = ""+fruit.getCoordinates().x();
-        sFruit[3] = ""+fruit.getCoordinates().y();
-        sFruit[4] = ""+fruit.getCoordinates().z();
-        sFruit[5] = ""+fruit.getWeight();
-        return sFruit;
-
     }
     public Set<Packman> getPackMansCopy() {
         return new HashSet<>(packmen);
@@ -122,6 +108,14 @@ public class Game {
         }
         public void addFruit(Fruit f){
         this.fruits.add(f);
+        }
+        public void removePackmanbyPosition(Point3D packman){
+        for (Packman packman1 : this.getPackMansCopy())
+            if (packman.equals(packman1.getCoordinates()))
+                this.packmen.remove(packman1);
+                }
+        public String stats(){
+        return "["+packmen.size()+ "]"+"["+fruits.size()+"]";
         }
     }
 
