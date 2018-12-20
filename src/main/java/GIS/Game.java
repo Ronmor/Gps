@@ -1,23 +1,16 @@
 package GIS;
 
 import File_format.CsvReader;
-import File_format.CsvWriter;
 import Geom.Point3D;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Game {
     /**
-     * This class represents a collection of <Fruit> and a collection of <Robots> </></Fruit>
-     * a Game can be build by a Csv file as appers in the example
-     * This class Should have the abillity to save Game's data to a Csv file as well
-     *
-     */
-    /**
+     * This class represents the Game , Where the players are Packman and Fruits .
+     * a Game can be saved to or be created from by a Csv file as appears in the example
      * should have two sets and proper methods to add sets its elements from csv.
      */
     private Set<Fruit> fruits = new HashSet<>();
@@ -117,5 +110,13 @@ public class Game {
         public String stats(){
         return "["+packmen.size()+ "]"+"["+fruits.size()+"]";
         }
+
+    public List<Packman> getPackmanAsList() {
+        List<Packman> pacman = new LinkedList<>();
+        for (Packman packman: packmen){
+            pacman.add(packman);
+        }
+        return pacman;
     }
+}
 

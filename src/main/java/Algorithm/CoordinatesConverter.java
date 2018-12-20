@@ -6,10 +6,14 @@ import Geom.Point3D;
  * This class provides the functionality of conversions between UTM and this project's representation of a Gps Coordinate
  * most parts of this class are ideas found online at the https://stackoverflow.com/questions
  * some adaptations has been personally made on multiple parts of the project , maintaining strong accuracy.
+ * @author Rivka Revivo , Ron Mor
  */
 public class CoordinatesConverter {
 
-
+    /**
+     * @param point3D represented by Lat,Lon,Alt values
+     * @return UTM
+     */
     public static UTM Deg2UTM(Point3D point3D) {
 
         double Easting;
@@ -70,7 +74,11 @@ public class CoordinatesConverter {
 
         return new UTM(Easting, Northing, Zone, Letter);
     }
-
+    /**
+     * @see #Deg2UTM(Point3D) , the oppisite conversion
+     * @param utm is a geographic location
+     * @return Point3D representation of UTM input.
+     */
     public static Point3D UtmToPoint3D(UTM utm) {
         double longitude;
         double latitude;

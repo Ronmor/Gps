@@ -14,9 +14,8 @@ public class Path {
     private final MyCoords myCoords = new MyCoords();
     public Path() {
     }
-
     /**
-     * Constructor to hold coordinates of eaten fruits for a single path
+     * Constructor to hold coordinates of eaten fruits for a single path , ideal for kml writing of path's data
      * @param fruits is a List of Fruit
      */
     public Path(List<Fruit> fruits){
@@ -25,9 +24,11 @@ public class Path {
             points.add(fruit.getCoordinates());
         }
     }
+    /**
+     * @return the list of points alongside path
+     */
     public List<Point3D> getPointsCopy() {
-        return new LinkedList<>(points);
-    }
+        return new LinkedList<>(points);}
     /**
      * @return the distance of Path in meters
      */
@@ -52,8 +53,12 @@ public class Path {
     public Point3D getLastPointCopy() {
         return new Point3D(points.get(size() - 1));
     }
-
-    public static int BiggestPath(List<Path> LP)
+    /**
+     * a static method
+     * @param LP represents a List of path
+     * @return size of longest path on LP
+     */
+    private static int BiggestPath(List<Path> LP)
     {
         int max = -1;
         for(Path p: LP)
@@ -63,27 +68,32 @@ public class Path {
         }
         return max;
     }
-    public int[] aXis(){
-        //Point3D[] arr = (Point3D[]) this.getPointsCopy().toArray();
+    /**
+     * Method array of point3D.ix() (x values) , for graphic
+     * @return array of integers
+     */
+    private int[] aXis(){
         int[] x = new int[this.points.size()];
         for (int i = 0; i <x.length ; i++) {
-            //x[i] = arr[i].ix();
             x[i] = points.get(i).ix();
         }
         return x;
     }
-    public int[] aYis(){
-        //List<Point3D> arr = (Point3D[]) this.getPointsCopy();
+    /**
+     * @see Path#aXis() ---> for Y values
+     * @return array of integers
+     */
+    private int[] aYis(){
         int[] y = new int[this.points.size()];
         for (int i = 0; i <y.length ; i++) {
-            //y[i] = arr[i].iy();
             y[i] = points.get(i).iy();
         }
         return y;
     }
+    /**
+     * @return if Path is empty
+     */
     public boolean empty(){
         return points.isEmpty();
     }
-
-
 }
