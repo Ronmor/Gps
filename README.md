@@ -50,6 +50,26 @@ To create Kml files I used JAK external library: https://labs.micromata.de/proje
 ![hello kml quickstart micromata labs](https://user-images.githubusercontent.com/44743734/49344221-eef1c600-f67c-11e8-9881-f95a4237d005.png)
 
 
+# Ex3 – Let the Game begin!
+In this phase, the geographic system continues to evolve, with some interesting twists.
+
+A new Packman game was added to the mix, play the good old packman game over a real picture of a map.
+
+the main target of exercise was to build and algorithm that will finish the game as soon as possible.
+
+![game](https://user-images.githubusercontent.com/44743734/50381717-9cf9fa00-0696-11e9-97ea-442b2ded0752.PNG)
+
+The game ends when all Fruits have been eaten by the packmen.
+
+Finding the shortest path possible for a single player and a group of packmen has been build 
+Achieving impressive results.
+
+A Game can be built By several ways, including from a proper csv file, and manually from the Jframe (MyFrame) window.
+
+Also , view game's rewind on google earth , with "Game2Kml".
+![pml](https://user-images.githubusercontent.com/44743734/50381716-9a97a000-0696-11e9-8f24-98b4ac2d3710.PNG)
+
+
 # Class diagram for Ex_2
 
 
