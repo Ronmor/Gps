@@ -50,6 +50,9 @@ public class ShortestPathAlgo {
         return project;
     }
 
+    /**
+     * @return the List of all calculated paths. this list is the solution of algorithm.
+     */
     public List<Path> calcPathes() {
         List<Path> pathes = new ArrayList<>(packmen.size() + fruits.size());
         for (int i = 0; i < packmen.size() + fruits.size(); i++) {
@@ -81,6 +84,10 @@ public class ShortestPathAlgo {
         fillCurrentCoordinates(pathes, timeOffset, packmanToFruitAssignments);
         return pathes;
     }
+    /**
+     * @param paths is a List<Path> , already calculated
+     * @return GIS_project representation , ideal for writing kml files
+     */
     public GIS_project fillKmlProjectVersion(List<Path> paths){
         fillCurrentCoordinates(paths,System.currentTimeMillis(),assignPackmenToFruits(calcTimeMatrix(eatenFruitsIndices)));
         return project;
@@ -182,7 +189,6 @@ public class ShortestPathAlgo {
         }
         return new Pair<>(minTime, eatenFruitToPackmanMapping);
     }
-
     private java.util.Map<Integer, Integer> assignPackmenToFruits(double[][] timeMatrix) {
         //Method is responsible to assign Packman to Fruits Based on the time matrix
         java.util.Map<Integer, Integer> packmanToFruitAssignments = new HashMap<>();
@@ -213,7 +219,6 @@ public class ShortestPathAlgo {
         } //when finished assignments , returns a map representation
         return packmanToFruitAssignments;
     }
-
     private double[][] calcTimeMatrix(Set<Integer> eatenFruitsIndices) {
         //2D array where every row represent a Packman and every column represents a Fruit
         //Every index in raw is the time for a certain Packman to eat the Fruit represent by it's column

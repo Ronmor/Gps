@@ -3,10 +3,7 @@ package File_format;
 import Algorithm.Path;
 import Algorithm.ShortestPathAlgo;
 import Algorithm.Solution;
-import GIS.GIS_element;
-import GIS.GIS_layer;
-import GIS.GIS_project;
-import GIS.Game;
+import GIS.*;
 import Geom.Point3D;
 
 import java.io.File;
@@ -14,10 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Kml {
 
@@ -61,7 +55,9 @@ public class Kml {
         List<Path> solutions = solution.getSolutionPathList();
         Game Kmled = solution.getGame();
         ShortestPathAlgo kmlpaths = new ShortestPathAlgo(Kmled);
+        Path2Kml path2Kml = new Path2Kml();
         GIS_project gameProject = kmlpaths.fillKmlProjectVersion(solutions);
+
         PrintWriter writer = new PrintWriter(new File(output + ".kml"));
         writer.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
         writer.println("<kml xmlns=\"http://www.opengis.net/kml/2.2\"\n" +
@@ -98,8 +94,10 @@ public class Kml {
             layerCounter = 1;
             lastTimeStamp = firstTimeStamp;
         }
+        int IndexOfPath = 0;
         for (Path pathIndex : solutions) {
-            Path2Kml.Path2Kml(writer, pathIndex);
+            path2Kml.Path2Kml(writer, pathIndex,IndexOfPath);
+            IndexOfPath++;
         }
         for (GIS_layer gameIteration : gameProject) {
             DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
